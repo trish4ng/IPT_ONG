@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFCBCB;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Container styling */
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container styling for dark mode */
+.dark-mode .container {
+    background-color: #6D6D6D;
+}
+
+/* Title styling */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #921A40;
+    transition: color 0.3s;
+}
+
+/* Title styling for dark mode */
+.dark-mode h1 {
+    color: #FFB6C1; /* Light pink color in dark mode */
+}
+
+/* Input styling */
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #921A40;
+}
+
+/* Add button styling */
+/* Add button styling */
+.add-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #921A40; /* Original dark pink */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #FFB6C1 !important; /* Light pink color on hover */
+}
+
+/* Toggle button styling */
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .toggle-button {
+    background-color: black;
+    color: white;
+}
+
+.toggle-button i {
+    margin-right: 8px;
+}
+
+.toggle-button i:hover {
+  color: white;
+}
+
+/* Result text styling */
+/* Result text styling */
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333; /* Default color */
+}
+
+/* Result text styling for dark mode */
+.dark-mode #result {
+    color: #fff; /* White text color in dark mode */
+}

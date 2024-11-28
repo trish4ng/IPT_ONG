@@ -1,0 +1,169 @@
+::-webkit-scrollbar {
+    display: none;   
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFCBCB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: #C75B7A;
+}
+
+/* Logo styling */
+.logo {
+    width: 120px; /* Adjust the size of your logo */
+    height: 40px;
+    margin-left: 50px;
+}
+
+/* Navbar links */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 20px; /* Padding for the entire box */
+    background-color: #921A40; /* Background color for the box containing the links */
+    border-radius: 30px; /* Rounded corners for the box */
+    margin: 0;
+    margin-right: 5%;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block; /* Makes the link take up the full space */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #DA7297;
+}
+
+/* Flexbox container for both sections */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Align items from the left */
+    align-items: center; /* Vertically center content */
+    padding: 1px;
+    max-width: 1200px; /* Control the overall width of the layout */
+    margin-top: 150px; /* Center the flex container horizontally */
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px; /* Reduce space between the text and image containers */
+}
+
+/* Left side: Heading and paragraph container */
+.container2 {
+    width: 500px; /* Fixed width */
+    height: auto; /* Adjust height automatically based on content */
+    text-align: left;
+    padding-right: 10px; /* Less space between text and image */
+    padding: 0; /* Remove padding to bring it closer */
+    box-sizing: border-box; /* Ensures padding doesn't increase width/height */
+}
+
+.container2 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #921A40;
+}
+
+.container2 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #921A40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below button */
+    margin-top: 10px;
+}
+
+button a {
+    color: white;
+}
+
+button i {
+    margin-left: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: #DA7297;
+}
+
+/* Social media icons styling */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #921A40;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #DA7297;
+}
+
+/* Right side: Image container */
+.container3 {
+    width: 350px; /* Adjust the width for the image container */
+    height: auto; /* Adjust height automatically */
+    text-align: center; /* Center the image horizontally */
+    padding: 0; /* Remove padding to bring it closer */
+    box-sizing: border-box; /* Ensures padding doesn't increase width/height */
+}
+
+.container3 img {
+    width: 350px; /* Larger width */
+    height: 350px; /* Larger height */
+    border-radius: 50%; /* Fully round image */
+    box-shadow: 0 8px 16px #921A40; /* Add a shadow */
+    margin-left: 50px;
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 250px;
+  }
+  
+  .image-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 20px;
+    margin-right: 75px;
+  }
+  
+  /* General container styling */
+  .container {
+    width: 100%; /* Set full width */
+    max-width: 1200px; /* Ensure containers don’t expand beyond 1200px */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Heading styling */
+  h2 {
+    width: 100%; /* Ensure the <h2> takes the full width of the container */
+    color: white;
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box; /* Includes padding in the width */
+    margin: 0; /* No extra margin */
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Section containers (personal, education, employment, etc.) */
+  .personal-data-box, 
+  .educational-background-box, 
+  .employment-record-box, 
+  .character-reference-box, 
+  .last-box {
+    width: 100%; /* Make containers take full width */
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Includes padding and border in width calculations */
+  }
+  
+  /* Data fields container */
+  .pdata, .educb, .employmentr, .character, .last {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  
+  .pdata label, 
+  .educb label, 
+  .employmentr label, 
+  .character label, 
+  .last label {
+    width: 25%;
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .pdata input, 
+  .educb input, 
+  .employmentr input, 
+  .character input, 
+  .last input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  /* Last container for signature and certification */
+  .last-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .last-box {
+    flex: 1;
+  }
+  
+  /* Signature box */
+  .signature {
+    text-align: center;
+    margin-top: auto; /* Push signature to the bottom */
+  }
+  
+  .signature p {
+    margin: 5px;
+  }
+  
+  /* Right side with certification */
+  .certification-container {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  p.cert {
+    text-align: justify;
+    margin-top: 1px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .signature {
+    text-align: center;
+    margin-top: 80px; /* Push signature to the bottom */
+  }
+  
+  .signature p {
+    margin: 5px;
+  }
+  
