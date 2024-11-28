@@ -1,0 +1,456 @@
+::-webkit-scrollbar {
+    display: none;   
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFCBCB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: radial-gradient(circle, #ffffff, #ffb6c1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: center center;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: #C75B7A;
+}
+
+/* Logo styling */
+.logo {
+    width: 120px; /* Adjust the size of your logo */
+    height: 40px;
+    margin-left: 50px;
+}
+
+/* Navbar links */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 20px; /* Padding for the entire box */
+    background-color: #921A40; /* Background color for the box containing the links */
+    border-radius: 30px; /* Rounded corners for the box */
+    margin: 0;
+    margin-right: 5%;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block; /* Makes the link take up the full space */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #DA7297;
+}
+
+/* Flexbox container for both sections */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Align items from the left */
+    align-items: center; /* Vertically center content */
+    padding: 1px;
+    max-width: 1200px; /* Control the overall width of the layout */
+    margin-top: 150px; /* Center the flex container horizontally */
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px; /* Reduce space between the text and image containers */
+}
+
+/* Left side: Heading and paragraph container */
+.container2 {
+    width: 500px; /* Fixed width */
+    height: auto; /* Adjust height automatically based on content */
+    text-align: left;
+    padding-right: 10px; /* Less space between text and image */
+    padding: 0; /* Remove padding to bring it closer */
+    box-sizing: border-box; /* Ensures padding doesn't increase width/height */
+}
+
+.container2 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #921A40;
+}
+
+.container2 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #921A40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below button */
+    margin-top: 10px;
+}
+
+button a {
+    color: white;
+}
+
+button i {
+    margin-left: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: #DA7297;
+}
+
+/* Social media icons styling */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #921A40;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #DA7297;
+}
+
+/* Right side: Image container */
+.container3 {
+    width: 350px; /* Adjust the width for the image container */
+    height: auto; /* Adjust height automatically */
+    text-align: center; /* Center the image horizontally */
+    padding: 0; /* Remove padding to bring it closer */
+    box-sizing: border-box; /* Ensures padding doesn't increase width/height */
+}
+
+.container3 img {
+    width: 350px; /* Larger width */
+    height: 350px; /* Larger height */
+    border-radius: 50%; /* Fully round image */
+    box-shadow: 0 8px 16px #921A40; /* Add a shadow */
+    margin-left: 50px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 200px;
+    text-align: center;
+}
+
+#services1 {
+    margin-top: 80px;
+}
+
+.services-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #921A40;
+}
+
+.services-section p {
+    font-size: 18px;
+}
+
+.services-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 90px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 15px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    max-width: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #921A40;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: black;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: transparent; /* Make the background transparent */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    background-position: center center; /* Centers the background image */
+    padding: 50px 0; /* Adds some space around the content */
+}
+
+.feedback-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #921A40;
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    color: black;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.feedback-slide {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.feedback-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feedback-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.feedback-card h4 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 18px;
+}
+
+.feedback-card span {
+    color: #777;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 16px;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #921A40;
+}
+
+.projects-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: transparent; /* Make the background transparent */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #921A40;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: black;
+    background-color: #ffb6c1;
+  }
+  
+  .filter-btn.active,
+  .filter-btn:hover {
+    background-color: #921A40;
+    color: #fff;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .project-card {
+    width: 300px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 8px;
+    margin: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Reduced scaling */
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15); /* Adjusted shadow */
+}
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-card h3 {
+    font-size: 1rem;
+    color: black;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    color: black;
+    margin: 0 15px 15px;
+    text-align: center;
+  }  
+
+/* Footer Section */
+.footer {
+    background-color: #C75B7A;
+    color: #fff;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Distribute content */
+    align-items: center; /* Center vertically */
+    padding: 20px 50px; /* Add padding */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    text-align: left;
+}
+
+.footer-logo img {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px;
+}
+
+.footer-links {
+    flex: 1; /* Let links take available space */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow links to wrap if needed */
+}
+
+.footer-column {
+    flex: 0 1 33%; /* Ensure three equal columns */
+    margin: 10px 80px; /* Add space between columns */
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+    display: block; /* Make each link occupy a new line */
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+    color: #FFCBCB;
+}
