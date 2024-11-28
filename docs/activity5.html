@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition and Dark/Light Mode Toggle</title>
+    <link rel="stylesheet" href="/css/activity5.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Addition</h1>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number"><br>
+        <button onclick="addNumbers()" class="add-button">Add</button>
+        
+        <!-- Result Display -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Toggle Button Outside Container -->
+    <button id="mode-button" onclick="toggleDarkMode()" class="toggle-button">
+        Switch to Dark Mode
+    </button>
+
+    <script src="/js/activity5.js"></script>
+</body>
+</html>
